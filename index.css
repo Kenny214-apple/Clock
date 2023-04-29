@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* STOP WATCH */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: black; */
+}
+
+.stop-watch-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  display: none;
+}
+
+#time {
+  color: darkgoldenrod;
+  font-size: 50px;
+}
+
+.laps {
+  margin-top: 30px;
+  color: darkgoldenrod;
+}
+
+.laps > p {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.buttons > div > button {
+  border-radius: 40%;
+  padding: 5px 15px;
+  max-width: 30px;
+  background-color: darkgoldenrod;
+  color: azure;
+  border: none;
+}

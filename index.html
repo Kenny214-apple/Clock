@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <div class="stop-watch-container">
+      <div class="header">
+        <div id="time">00 : 00 . 00</div>
+      </div>
+      <div class="laps">
+        <p>LAPS-</p>
+      </div>
+      <div class="buttons">
+        <div class="start-div"><button id="start">Start</button></div>
+        <div class="reset-div"><button id="reset">Reset</button></div>
+        <div class="lap-btn-div"><button id="lap">Lap</button></div>
+      </div>
+    </div>
+
+    <!-- Timer App -->
+    <div class="Timer-container">
+      <div id="timer">
+        <span id="hour-span">00</span>:<span id="minutes-span">00</span>:<span
+          id="seconds-span"
+          >00</span
+        >
+      </div>
+      <div class="hours">
+        <label for="hours">Hours: </label>
+        <input
+          type="number"
+          placeholder="10"
+          class="timer-hours"
+          oninput="hoursDiv()"
+        />
+      </div>
+      <div class="minutes">
+        <label for="minutes">Minutes: </label>
+        <input
+          type="number"
+          placeholder="10"
+          class="timer-minutes"
+          oninput="minutesDiv()"
+        />
+      </div>
+      <div class="seconds"></div>
+      <label for="seconds">Seconds: </label>
+      <input
+        type="number"
+        placeholder="10"
+        class="timer-seconds"
+        oninput="secondsDiv()"
+      />
+    </div>
+    <div class="button-timer-div">
+      <button class="timer-start">Start</button>
+      <button class="timer-reset">Reset</button>
+      <button class="timer-pause">Pause</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
